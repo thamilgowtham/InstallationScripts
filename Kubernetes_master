@@ -32,4 +32,5 @@ After connect the machine need to do below steps in master machine
 After Control plane is ready run the below command in master node
 *****************************************************************
 kubeadm token create --print-join-command
+Note: Ubuntu:20 Machine
 
