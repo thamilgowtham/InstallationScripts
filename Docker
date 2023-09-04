@@ -1,0 +1,9 @@
+# Install Docker
+sudo apt update -y
+sudo curl -fsSL https://get.docker.com -o install-docker.sh
+sudo sh install-docker.sh -y 
+sudo service docker start
+sudo useradd jenkins
+usermod -aG docker jenkins
+sudo chown -R jenkins:jenkins /home/jenkins/.docker
+sudo chmod 666 /var/run/docker.sock
